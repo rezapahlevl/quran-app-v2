@@ -17,7 +17,7 @@ export default function Navbar(){
     return (
         <div className="navbar bg-base-300 fixed top-0 z-10 border-b border-base-200">
         <div className="flex-1">
-            <a href="/#" className="btn btn-ghost normal-case text-xl"><BookOpen />Quran App</a>
+            <a href="/quran-app-v2/" className="btn btn-ghost normal-case text-xl"><BookOpen />Quran App</a>
         </div>
         <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
