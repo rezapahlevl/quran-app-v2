@@ -1,6 +1,7 @@
 import { BookOpen, Palette } from "lucide-react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
     const [theme, setTheme] = useState(
@@ -17,7 +18,9 @@ export default function Navbar(){
     return (
         <div className="navbar bg-base-300 fixed top-0 z-10 border-b border-base-200">
         <div className="flex-1">
-            <button className="btn btn-ghost normal-case text-xl"><BookOpen />Quran App</button>
+            <Link to={"/"}>
+            <button className="btn btn-ghost normal-case rounded text-xl"><BookOpen />Quran App</button>
+            </Link>
         </div>
         <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
